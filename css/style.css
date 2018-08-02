@@ -6,3 +6,5 @@ body { margin: 0 auto; padding: 0; font-family: 'Source Serif Pro', serif; font-
 .container { max-width: 1200px; margin: auto; text-align: center; }
 
 h1 { font-size: 48px; color: #fcf1e3; text-shadow: 2px 2px #444; }
+
+.restart { position: absolute; bottom: 90px; right: 10px; }
