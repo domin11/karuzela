@@ -1,0 +1,13 @@
+.carousel-cell {
+  width: 100%; /* full width */
+  min-height: 250px;
+  height: 90vh; /* height of carousel */
+  margin-right: 10px;
+  background-size: cover;
+  background-position: top;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
