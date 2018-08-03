@@ -5,6 +5,7 @@
   <title>Karuzela</title>
   <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
     <script id="template-carousel" type="x-tmpl-mustache">
       <div class="carousel-cell" id="{{ id }}" style="background-image: url('{{ image }}')">
         <div class="container"><h1>{{ title }}</h1></div>
-        <div> {{{description}}} </div>
+        <div class="description"> {{{description}}} </div>
       </div>
     </script>
   </div>
@@ -26,31 +27,31 @@
     		id: 'malbork',
         image: 'http://przystanstegna.pl/wp-content/uploads/2016/05/maxresdefault-15.jpg',
         title: 'Zamek w Malborku',
-        description: '<p>Lorem ipsum malbork</p>'
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_w_Malborku/"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
     	},
     	{
         id: 'wawel',
         image: 'http://www.tabodesign.com/wp-content/uploads/2014/12/krakow-wawel.jpg',
         title: 'Zamek Królewski na Wawelu',
-        description: '<p>Lorem ipsum wawel</p>'
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Kr%C3%B3lewski_na_Wawelu"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
     	},
     	{
         id: 'ksiaz',
         image: 'http://zacisznydomek.pl/wp-content/uploads/2017/05/atrakcje_006-1920x1080.jpg',
         title: 'Zamek Książ',
-        description: '<p>Lorem ipsum książ</p>'
+        description: '<a href="https://pl.wikipedia.org/wiki/Ksi%C4%85%C5%BC"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
     	},
       {
         id: 'ogrodzieniec',
         image: 'http://data.1freewallpapers.com/download/the-ruins-of-ogrodzieniec-castle.jpg',
         title: 'Zamek Ogrodzieniec',
-        description: '<p>Lorem ipsum ogrodzieniec</p>'
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Ogrodzieniec"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
     	},
       {
         id: 'moszna',
         image: 'https://images8.alphacoders.com/487/thumb-1920-487439.jpg',
         title: 'Zamek Moszna',
-        description: '<p>Lorem ipsum moszna</p>'
+        description: '<a href="https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Mosznej"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
     	}
     ];
   </script>

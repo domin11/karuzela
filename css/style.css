@@ -1,12 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Francois+One|Source+Serif+Pro);
 body { margin: 0 auto; padding: 0; font-family: 'Source Serif Pro', serif; font-family: 'Francois One', sans-serif; }
 
-.carousel-cell { width: 100%; /* full width */ min-height: 250px; height: 90vh; /* height of carousel */ margin-right: 10px; background-size: cover; background-position: top; }
+.carousel-cell { width: 100%; /* full width */ min-height: 250px; height: 100vh; /* height of carousel */ margin-right: 10px; background-size: cover; background-position: top; }
 
 .container { max-width: 1200px; margin: auto; text-align: center; }
 
 h1 { font-size: 48px; color: #fcf1e3; text-shadow: 2px 2px #444; }
 
-.restart { position: absolute; bottom: 90px; right: 10px; }
+.description { position: absolute; bottom: 0; width: 100%; padding: 10px; text-align: center; background: rgba(179, 179, 179, 0.5); }
+
+.description i { margin-left: 7px; font-size: 22px; }
+
+.description a { text-decoration: none; color: white; }
+
+.description a:hover { color: yellow; }
+
+.restart { position: absolute; bottom: 25px; right: 10px; }
 
 .progress-bar { height: 15px; width: 0; background: black; }

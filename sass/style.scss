@@ -9,7 +9,7 @@ body{
 .carousel-cell {
   width: 100%; /* full width */
   min-height: 250px;
-  height: 90vh; /* height of carousel */
+  height: 100vh; /* height of carousel */
   margin-right: 10px;
   background-size: cover;
   background-position: top;
@@ -24,9 +24,28 @@ h1{
   color: #fcf1e3;
   text-shadow: 2px 2px #444;
 }
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: rgba(179, 179, 179, 0.5);
+  i {
+    margin-left: 7px;
+    font-size: 22px;
+  }
+  a {
+  text-decoration: none;
+  color: white;
+    &:hover {
+      color: yellow;
+    }
+  }
+}  
 .restart {
   position: absolute;
-  bottom: 90px;
+  bottom: 25px;
   right: 10px;
 }
 .progress-bar {
