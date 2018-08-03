@@ -1,15 +1,23 @@
 'use strict';
 var restartButton = document.querySelector('.restart');
 var progressBar = document.querySelector('.progress-bar')
+var templateCarousel = document.getElementById('template-carousel').innerHTML;
+var carousel = document.querySelector('.main-carousel');
+var listData = '';
 
-var elem = document.querySelector('.main-carousel');
-  
-var flkty = new Flickity( elem, {
+Mustache.parse(templateCarousel);
+
+for(var i = 0; i < carouselData.length; i++){
+	listData = Mustache.render(templateCarousel, carouselData[i]);
+  carousel.insertAdjacentHTML('beforeend', listData);
+}
+
+var flkty = new Flickity( carousel, {
   // options
   cellAlign: 'left',
   contain: true,
   hash: true,
-  pageDots: false
+  pageDots: false,
 });
 
 restartButton.addEventListener( 'click', function() {
