@@ -3,6 +3,7 @@ var restartButton = document.querySelector('.restart');
 var progressBar = document.querySelector('.progress-bar')
 
 var elem = document.querySelector('.main-carousel');
+  
 var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
