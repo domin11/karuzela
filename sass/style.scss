@@ -54,6 +54,9 @@ h1{
   background: black;
 }
 #map {
-	height: 200px;
-	width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25vh;
+  width: 25vw;
 }
