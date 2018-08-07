@@ -18,3 +18,5 @@ h1 { font-size: 48px; color: #fcf1e3; text-shadow: 2px 2px #444; }
 .restart { position: absolute; bottom: 25px; right: 10px; }
 
 .progress-bar { height: 15px; width: 0; background: black; }
+
+#map { height: 200px; width: 100%; }

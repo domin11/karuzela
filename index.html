@@ -27,38 +27,46 @@
     		id: 'malbork',
         image: 'http://przystanstegna.pl/wp-content/uploads/2016/05/maxresdefault-15.jpg',
         title: 'Zamek w Malborku',
-        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_w_Malborku/"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
-    	},
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_w_Malborku/"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>',
+        cords: {lat: 54.039771, lng: 19.028013}
+      },
     	{
         id: 'wawel',
         image: 'http://www.tabodesign.com/wp-content/uploads/2014/12/krakow-wawel.jpg',
         title: 'Zamek Królewski na Wawelu',
-        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Kr%C3%B3lewski_na_Wawelu"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
-    	},
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Kr%C3%B3lewski_na_Wawelu"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>',
+        cords: {lat: 50.054091, lng: 19.935369}
+      },
     	{
         id: 'ksiaz',
         image: 'http://zacisznydomek.pl/wp-content/uploads/2017/05/atrakcje_006-1920x1080.jpg',
         title: 'Zamek Książ',
-        description: '<a href="https://pl.wikipedia.org/wiki/Ksi%C4%85%C5%BC"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
-    	},
+        description: '<a href="https://pl.wikipedia.org/wiki/Ksi%C4%85%C5%BC"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>',
+        cords: {lat: 50.842282, lng: 16.291857}
+      },
       {
         id: 'ogrodzieniec',
         image: 'http://data.1freewallpapers.com/download/the-ruins-of-ogrodzieniec-castle.jpg',
         title: 'Zamek Ogrodzieniec',
-        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Ogrodzieniec"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
-    	},
+        description: '<a href="https://pl.wikipedia.org/wiki/Zamek_Ogrodzieniec"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>',
+        cords: {lat: 50.453113, lng: 19.552093}
+      },
       {
         id: 'moszna',
         image: 'https://images8.alphacoders.com/487/thumb-1920-487439.jpg',
         title: 'Zamek Moszna',
-        description: '<a href="https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Mosznej"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>'
-    	}
+        description: '<a href="https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Mosznej"><p>dowiedz się więcej<i class="fab fa-wikipedia-w"></i></p></a>',
+        cords: {lat: 50.440755, lng: 17.767886}
+      }
     ];
   </script>
+
+  <div id="map"></div>
 
   <script src="vendor/flickity.pkgd.min.js"></script>
   <script src="vendor/hash.js"></script>
   <script src="vendor/mustache.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbD9hkNoeCi8QukwUmzs3z5dv8B2DNIRg&callback=initMap"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

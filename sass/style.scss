@@ -42,7 +42,7 @@ h1{
       color: yellow;
     }
   }
-}  
+}
 .restart {
   position: absolute;
   bottom: 25px;
@@ -52,4 +52,8 @@ h1{
   height: 15px;
   width: 0;
   background: black;
+}
+#map {
+	height: 200px;
+	width: 100%;
 }
