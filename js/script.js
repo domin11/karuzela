@@ -31,18 +31,14 @@ flkty.on( 'scroll', function( progress ) {
 
 window.initMap = function() {
 
-		 var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 10,
+		 	var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 12,
 			center: carouselData[0].cords
-		});
-
-	for (let i=0; i <carouselData.length; i++ ){
+		})
+		for (let i=0; i <carouselData.length; i++ ){
 			var marker = new google.maps.Marker({
 			position: carouselData[i].cords,
 			map: map
-		});
-		marker.addListener('click', function(){
-			flkty.selectCell('#' + carouselData[i].id);
-		});
+		})
 	}
 };
