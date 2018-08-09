@@ -20,25 +20,35 @@ var flkty = new Flickity( carousel, {
   pageDots: false,
 });
 
-restartButton.addEventListener( 'click', function() {
-  flkty.selectCell('#malbork');
-});
-
 flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
 
+flkty.on( 'change', function(index) {
+	map.panTo(carouselData[index].cords);
+});
+
 window.initMap = function() {
 
-		 	var map = new google.maps.Map(document.getElementById('map'), {
+		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 12,
 			center: carouselData[0].cords
-		})
-		for (let i=0; i <carouselData.length; i++ ){
+		});
+
+		for (let i = 0; i < carouselData.length; i++ ){
 			var marker = new google.maps.Marker({
-			position: carouselData[i].cords,
-			map: map
+				position: carouselData[i].cords,
+				map: map
+		});
+		marker.addListener('click', function(){
+			flkty.select(index);
 		})
 	}
 };
+
+
+
+restartButton.addEventListener( 'click', function() {
+  flkty.selectCell('#malbork');
+});
