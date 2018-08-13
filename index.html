@@ -10,13 +10,13 @@
 </head>
 <body>
   <div class="main-carousel">
-    <script id="template-carousel" type="x-tmpl-mustache">
-      <div class="carousel-cell" id="{{ id }}" style="background-image: url('{{ image }}')">
-        <div class="container"><h1>{{ title }}</h1></div>
-        <div class="description"> {{{description}}} </div>
-      </div>
-    </script>
   </div>
+  <script id="template-carousel" type="x-tmpl-mustache">
+    <div class="carousel-cell" id="{{ id }}" style="background-image: url('{{ image }}')">
+      <div class="container"><h1>{{ title }}</h1></div>
+      <div class="description"> {{{description}}} </div>
+    </div>
+  </script>
   <div class="progress-bar"></div>
   <button class="restart">Reload</button>
 
